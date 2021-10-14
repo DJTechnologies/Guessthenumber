@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
+        <label for="username">Username:</label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          type="text"
+          required
+          minlength="3"
+          maxlength="15"
+        />
+        <br />
+        <label for="pw">Password:</label>
+        <br />
+        <!--Add the pattern attribute to the input below-->
+        <input
+          id="pw"
+          name="pw"
+          type="password"
+          required
+          minlength="8"
+          maxlength="15"
+        />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
+
+<!-- <form action="/example.html" method="POST">
+  <label for="allergies">Do you have any dietary restrictions?</label>
+  <br>
+  <input id="allergies" name="allergies" type="text" required>
+  <br>
+  <input type="submit" value="Submit">
+</form> -->
+
+<!-- <form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form> -->
+<!-- <form action="/example.html" method="POST">
+  <label for="summary">Summarize your feelings in less than 250 characters</label>
+  <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+  <input type="submit" value="Submit">
+</form> -->
+<!-- <form action="/example.html" method="POST">
+  <label for="payment">Credit Card Number (no spaces):</label>
+  <br>
+  <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+  <input type="submit" value="Submit">
+</form> -->
+<!-- Client-side validations happen in the browser before information is sent to a server.
+Adding the required attribute to an input related element will validate that the input field has information in it.
+Assigning a value to the min attribute of a number input element will validate an acceptable minimum value.
+Assigning a value to the max attribute of a number input element will validate an acceptable maximum value.
+Assigning a value to the minlength attribute of a text input element will validate an acceptable minimum number of characters.
+Assigning a value to the maxlength attribute of a text input element will validate an acceptable maximum number of characters.
+Assigning a regex to pattern matches the input to the provided regex.
+If validations on a <form> do not pass, the user gets a message explaining why and the <form> cannot be submitted. -->
